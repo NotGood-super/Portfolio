@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaheer's Porlfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+        
+    <nav class="navbar" >
+       
+        <ul id="navbar">
+            <li><a href="#home" class="active" >Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#client">Client</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa fa-window-close" id="close"></i>
+        </ul>
+
+        <div id="mobile">
+            <i id="bar" class="fa fa-bars"></i>
+        </div>
+        
+    </nav>
+    
+
+
+    <section class="home" id="home">
+       
+        <div class="left-div">
+            <h2>Zaheer Mehrwarz</h2>
+            <p>Enthusiastic and hard-working web developer seeking an entry-level position with your company where I can apply creativity and passion to develop visually appealing and user-friendly websites. Have 1 year of experience in building dynamic and responsive websites using HTML, CSS, and JavaScript. 
+            </p>
+            <button> <a href="/images/OPD Resume - Ahmad  Zahir Rezaee (4).pdf">View Resume</a></button>
+        </div>
+        <div class="right-div">
+
+            <img src="/images/zahir-1.png" alt="">  
+        </div>
+      
+    </section>
+
+
+    <section class="sect " id="projects">
+        <h2>These Are The Project I Have Done</h2>
+        <div class="container reveal">
+        
+            <div class="s-container"> 
+                <div class="img">
+                    <a href="https://justforfun2023.000webhostapp.com/login.php"><img src="" alt=""></a>
+                </div>
+            </div>
+            <div class="s-container">
+                <div class="img">
+                    <a href="#"><img src="steve-jobs-e15619978592851.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="s-container"> 
+                <div class="img">
+                    <a href="#"><img src="steve-jobs-e15619978592851.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="s-container"> 
+                <div class="img">
+                <a href="#"><img src="steve-jobs-e15619978592851.jpg" alt=""> </a>
+                </div>
+            </div>
+        </div>
+      
+    </section>
+
+
+
+    <section class="client " id="client">
+       
+        <h2>Client Review</h2>
+        <div class="client-t reveal" >
+            
+            <div class="client-paragraph">
+                <div class="clinet-profile">
+                    <img src="/images/steve-jobs-e15619978592851.jpg" alt="">
+                    <h3>John</h3>
+                </div>
+                <div class="client-p">
+                    <p>Your team is professional, efficient, and delivers exceptional results. They were attentive to our needs and created a stunning website that perfectly captures our brand's essence. We highly recommend their services.</p>
+                </div>
+
+            </div>
+
+            <div class="client-paragraph">
+                <div class="clinet-profile">
+                    <img src="/images/pic-1.png" alt="">
+                    <h3>Jim Rohn</h3>
+                </div>
+                <div class="client-p">
+                    <p>I highly recommend this for website building services. Their team of experts provided exceptional service and delivered a stunning, user-friendly website that exceeded our expectations. Their attention to detail, expertise, and exceptional customer service make them the perfect choice for any business.</p>
+                </div>
+
+            </div>
+
+            <div class="client-paragraph">
+                <div class="clinet-profile">
+                    <img src="/images/pic-3.png" alt="">
+                    <h3>Jordan Peterson</h3>
+                </div>
+                <div class="client-p">
+                    <p>Their team of expert designers and developers provided professional and efficient service, delivering a stunning website that perfectly captured our brand's essence. From start to finish, their communication and attention to detail were top-notch, and the end result exceeded our expectations.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <h2>Ways To Contact Me</h2>
+        <div class="contact-s reveal">
+            
+            <p>If you prefer to send a message online, you can use the contact form on my website and Don't hesitate to reach out to me if you have any questions or just want to say hi. You can find me on Facebook, Instagram and Titok below.</p>
+            <div class="contact-me">
+                <div class="s-container">
+                    <a href="https://www.instagram.com/zaheer_mehrwarz"> <i class="fa-brands fa-instagram"></i> </a>
+                </div>
+                
+                <div class="s-container">
+                    <a href="https://www.facebook.com/zaheer.mehrwarz/"><i class="fa-brands fa-facebook"></i></a>
+
+                </div>
+
+                
+                <div class="s-container">
+                   <a href="https://www.linkedin.com/in/zahirrezaee"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2023, All Right Reserved <a href="https://www.linkedin.com/in/zahirrezaee" >Zaheer Mehrwarz</a> </p> 
+    </footer>
+
+    
+    
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <script>
+        TweenMax.staggerFrom('.navbar li', 2.5, {opacity: 0, y: -400});
+        TweenMax.staggerFrom('.left-div', 2.5, {opacity:0, x:-700, ease:Back.easeOut.config(1)});
+        TweenMax.staggerFrom('.right-div', 2.5, {opacity:0, x:700, ease:Back.easeOut.config(1)});
+    </script>
+</body>
+</html>
