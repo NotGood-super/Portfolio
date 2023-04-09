@@ -1,0 +1,639 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+
+body {
+   /* background: linear-gradient(-45deg, #142d4c,#385170, #9fd3c7, #ececec );
+    background-size: 400% 400%;
+    animation: gradient 17s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }   */
+    background-color: #EFF0EC;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+}
+
+
+*::-webkit-scrollbar {
+    height: 0.5rem;
+    width: 0.8rem;
+}
+
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb { 
+    background-color: #222831;
+    border-radius: 0.2rem;
+
+}
+
+
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    background: #222831;
+    z-index: 1;
+   
+    
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    margin: 0.3rem auto;
+}
+
+.fa.fa-bars {
+    display: none;
+}
+
+.navbar ul li {
+    font-size: 1.5rem;
+    margin: 0.7rem 2.5rem;
+    position: relative;
+    
+    
+}
+
+
+.navbar ul li a {
+    margin-right: 1rem;
+    color: #EFF0EC;
+    text-decoration: none;
+    padding: 0.4rem 0.7rem;
+    border-radius: 0.8rem;
+}
+
+.navbar ul li a.active {
+    text-decoration: underline;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+    min-height: 80vh;
+    margin-left: 8rem;
+    margin-right: 8rem;  
+}
+
+.home .left-div {
+    margin-right: 4rem;
+    width: 50%;
+}
+
+.home .left-div h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: #000000 ;
+}
+
+.home .left-div p {
+    font-size: 1.5rem;
+    text-align: left;
+    color:  #3d3d3d;
+}
+
+.home .left-div button {
+    font-size: 1.5rem;
+    padding: 0.5rem 3rem;
+    border-radius: 2.5rem;
+    border: 2px solid #3d3d3d;
+    margin-top: 2rem;
+    cursor: pointer;
+    color: #000000;
+}
+
+.home .left-div button a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.home .left-div button:hover,.home .left-div button a:hover {
+    color: #EFF0EC;
+    background-color: #3d3d3d;
+}
+
+.home .right-div {
+    position: relative;
+    width: 50%;
+    height: 55%;
+    margin: auto;
+    background: linear-gradient(0deg, rgba(140,140,140,1) 0%, rgba(239,240,236,1) 85%);
+
+    border-radius: 45%;   
+    overflow: hidden;
+    
+} 
+
+
+  
+.home .right-div img {
+    width: 60%;
+    height: 65%;
+    object-fit: cover;
+    margin-bottom: -1rem;
+    
+    
+}
+
+.sect {
+    display: flex;
+    flex-direction: column;
+}
+
+.sect h2 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #000000;
+}
+.sect .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding: 0.5rem;
+}
+
+.sect .container .s-container {
+    flex: 1 1 250px;
+    margin: 0.2rem;
+    padding: 0.1rem;
+}
+
+
+.sect .container .s-container .img {
+    padding: 0.3rem;
+   
+}
+
+.sect .container .s-container .img img  {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+
+
+  
+
+
+
+.client {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.client h2 {
+    font-size: 3rem;
+    color: #000000;
+}
+
+.client .client-t {
+    display: flex;
+    flex-direction: row;
+    padding: 4rem;
+    
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+
+.client .client-t .client-paragraph {
+    margin: 1rem;
+    border-radius: 1.5rem;
+    padding: 0.7rem 0.9rem;
+    box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.client .client-t .client-paragraph .clinet-profile {
+    display: flex;
+    align-items: center;
+}
+
+.client .client-t .client-paragraph .clinet-profile h3 {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    color: #000000;
+}
+
+.client .client-t .client-paragraph .clinet-profile img {
+    width: 20%;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.client .client-t .client-paragraph .client-p {
+    padding: 0.4rem 0.9rem;
+    margin: 1rem 2rem;
+    text-align: center;
+    color:  #3d3d3d;
+}
+
+.client .client-t .client-paragraph .client-p p {
+    font-size: 1.2rem;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.contact h2{
+    font-size: 3rem;
+    margin: 1rem 2rem 2rem 3rem;
+    color: #000000;
+}
+
+.contact .contact-s .contact-me {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.contact .contact-s p {
+    font-size: 1.5rem;
+    margin: 2rem;
+    color: #3d3d3d;
+}
+
+.contact .contact-s .contact-me .s-container {
+    background-color: transparent;
+    border: 1px solid #333;
+    margin: 1rem 0.3rem;
+    
+    border-radius: 0.7rem;
+    
+}
+
+.contact .contact-s .contact-me .s-container .fa-instagram,.contact .contact-s .contact-me .s-container .fa-facebook,.contact .contact-s .contact-me .s-container .fa-linkedin {
+    color: #000000;
+    cursor: pointer;
+}
+.contact .contact-s .contact-me .s-container .fa-instagram:hover {
+    background: linear-gradient(to bottom left, #4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
+    color: #fff;
+}
+
+.contact .contact-s .contact-me .s-container .fa-facebook:hover {
+    background-color: #4f5bd5; 
+    color: #fff;
+}
+
+.contact .contact-s .contact-me .s-container .fa-linkedin:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.contact .contact-s .contact-me .s-container i{
+     font-size: 3rem;
+     padding: 2rem 6rem;
+     
+    border-radius: 0.7rem;
+
+}
+
+
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0.5;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+
+
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+footer {
+    background-color: #222831;
+    padding: 1.2rem;
+    text-align: center;
+    color: #EFF0EC;
+}
+
+footer a {
+    color: #4f5bd5;
+    margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        justify-content: end;
+        background-color: transparent;
+        
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -400px;
+        height: 100vh;
+        width: 300px;
+        background-color: var(--alicebllue);
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.02);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+        background-color: #222831;
+    }
+    .fa.fa-bars {
+        display: flex;
+    }
+
+    #navbar.active {
+        right: 0;
+    }
+      
+    #mobile {
+        margin-top: 2rem;
+        margin-right: 2rem;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #mobile i {
+        cursor: pointer;
+        color: #1a1a1a;
+        font-size: 29px;
+        padding-left: 20px;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #EFF0EC;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+
+    
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        margin: 8rem 2rem 2rem 2rem;
+        padding: 0.2rem;
+        min-height: 80vh;
+         
+    }
+    
+    .home .left-div {
+        width: 70%;
+        text-align: center;
+        margin: 0.2rem;
+    }
+    
+    .home .left-div h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.3rem;
+        color: #000000;
+    }
+
+    .home .left-div button {
+        font-size: 0.8rem;
+        padding: 0.3rem 1.9rem;
+        border-radius: 2.5rem;
+        border: 1px solid #3d3d3d;
+    }
+    
+    .home .right-div {
+        margin-top: 3rem;
+        width: 70%;
+        
+    } 
+    
+    
+    .sect .container .s-container {
+        flex: 1 1 300px;
+        padding: 0.9rem;
+    }
+    
+
+
+    
+    
+    .client h2 {
+        font-size: 2.5rem;
+    }
+
+    .client .client-t {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .client .client-t .client-paragraph {
+        margin: 1rem;
+        box-shadow:rgba(0, 0, 0, 0.15) 0px 24px 25px, rgba(0, 0, 0, 0.12) 0px -2px 15px, rgba(0, 0, 0, 0.12) 0px 2px 3px, rgba(0, 0, 0, 0.17) 0px 6px 7px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    
+    
+    .client .client-t .client-paragraph .clinet-profile h3 {
+        font-size: 1.9rem;
+    }
+    
+    .client .client-t .client-paragraph .clinet-profile img {
+        width: 15%;
+    }
+    
+    .client .client-t .client-paragraph .client-p {
+        padding: 0.4rem 0.9rem;
+        margin: 1rem 2rem;
+        text-align: center;
+        color:  #3d3d3d;
+    }
+    
+    .client .client-t .client-paragraph .client-p p {
+        font-size: 1.6rem;
+    }
+    
+    .contact h2{
+        font-size: 2.5rem;
+    }
+    
+    .contact .contact-s .contact-me .s-container i{
+         font-size: 1.8rem;
+         padding: 1.5rem 5rem;
+    
+    }
+    
+
+
+
+
+
+
+
+    .column  {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .navbar {
+        justify-content: end;
+        
+    }
+      
+    #mobile {
+        margin-top: 1.5rem;
+        margin-right: 1.5rem;
+
+    }
+
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        margin: 8rem 1rem 1rem 1rem;
+         
+    }
+    
+    .home .left-div {
+        width: 75%;
+    }
+    
+    .home .left-div h2 {
+        font-size: 1.5rem;
+    }
+    
+    .home .left-div p {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    
+    .home .right-div {
+        margin-top: 4.5rem;
+        width: 75%;
+        
+    } 
+    
+    .sect .container .s-container {
+        flex: 1 1 250px;
+    }
+    
+    .sect h2 {
+        font-size: 2rem;
+        text-align: center;
+        color: #000000;
+        margin: 1.5rem 3rem ;
+    }
+
+
+    
+    
+    .client h2 {
+        font-size: 2rem;
+        margin-top: 5rem;
+    }
+
+    .client .client-t {
+        padding: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .client .client-t .client-paragraph .clinet-profile h3 {
+        font-size: 1.2rem;
+    }
+    
+    .client .client-t .client-paragraph .client-p {
+        padding: 0.4rem 0.9rem;
+        margin: 1rem 2rem;
+        text-align: center;
+        color:  #3d3d3d;
+    }
+    
+    .client .client-t .client-paragraph .client-p p {
+        font-size: 1rem;
+    }
+    
+    .contact h2{
+        font-size: 2rem;
+    }
+    
+    .contact .contact-s .contact-me .s-container i{
+         font-size: 1.8rem;
+         padding: 1.2rem 3rem;
+    
+    }
+}
+    
+    
+
+    
+  
+
+
+ 
