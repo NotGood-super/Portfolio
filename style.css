@@ -598,10 +598,10 @@ footer a {
         margin-top: 5rem;
     }
 
-    .client .client-t {
-        padding: 1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
+   .client .client-t {
+        padding: 0.3rem;
+        margin-left: 0.4rem;
+        margin-right: 0.4rem;
     }
     
     .client .client-t .client-paragraph .clinet-profile h3 {
@@ -609,23 +609,30 @@ footer a {
     }
     
     .client .client-t .client-paragraph .client-p {
-        padding: 0.4rem 0.9rem;
-        margin: 1rem 2rem;
+        padding: 0.2rem 0.4rem;
+        margin: 0.3rem 0.5rem;
         text-align: center;
         color:  #3d3d3d;
     }
+
+    .contact .contact-s p {
+        font-size: 1rem;
+        margin: 1rem;
+        color: #3d3d3d;
+    }
     
     .client .client-t .client-paragraph .client-p p {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     
     .contact h2{
         font-size: 2rem;
+        margin: 0;
     }
     
     .contact .contact-s .contact-me .s-container i{
          font-size: 1.8rem;
-         padding: 1.2rem 3rem;
+         padding: 1rem 1.6rem;
     
     }
 }
